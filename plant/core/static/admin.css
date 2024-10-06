@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #2d3436;
+    line-height: 1.6;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+/* Header Styles */
+header {
+    background-color: #505771;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #505771;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Content Styling */
+.content {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    transition: all 0.3s ease;
+}
+
+/* Login Page */
+.login-container {
+    background-color: white;
+    padding: 50px;
+    margin: 120px auto;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #505771;
+    font-weight: 600;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-container input {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #505771;
+    outline: none;
+    box-shadow: 0 0 10px rgba(26, 188, 156, 0.15);
+}
+
+.login-container button {
+    padding: 15px;
+    background-color: #505771;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #516099;
+    box-shadow: 0 8px 15px rgba(22, 160, 133, 0.2);
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: white;
+    padding: 80px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px 0;
+    max-width: 1000px;
+    transition: all 0.3s ease;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+    color: #505771;
+    font-weight: 600;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: #636e72;
+    margin-bottom: 30px;
+}
+
+.jumbotron a.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.jumbotron .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.jumbotron .btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.jumbotron .btn-success {
+    background-color: #505771;
+    color: white;
+    box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3);
+}
+
+.jumbotron .btn-success:hover {
+    background-color: #516099
+}
+
+/* Button Styling */
+button, .btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page */
+.home-container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.home-container h2 {
+    font-size: 36px;
+    color: #505771;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    font-size: 18px;
+    color: #636e72;
+    margin-bottom: 40px;
+}
+
+.home-container button {
+    padding: 15px 40px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-container button:hover {
+    background-color: #3498db;
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .login-container {
+        padding: 30px;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+
+    .jumbotron p {
+        font-size: 16px;
+    }
+}
+
