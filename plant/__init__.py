@@ -11,9 +11,6 @@ app.app_context().push()
 # Flask Login
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
-from flask_cors import CORS
-
-CORS(app)
 login_manager = LoginManager(app)
 bcrypt = Bcrypt(app)
 
@@ -68,8 +65,8 @@ app.cli.add_command(create_superuser)
 
 
 # CSRF
-#from flask_wtf.csrf import CSRFProtect
-#csrf = CSRFProtect(app)
+from flask_wtf.csrf import CSRFProtect
+csrf = CSRFProtect(app)
 
 
 # COOKIE
