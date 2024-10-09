@@ -18,9 +18,9 @@ class DashboardView(AdminIndexView):
     def is_visible(self):
         return False
 
-admin = Admin(app, name='Plant Admin', template_mode='bootstrap4', index_view=DashboardView())
+admin = Admin(app, name='User Admin', template_mode='bootstrap4', index_view=DashboardView())
 
-media_path = os.path.join(f'{os.path.dirname(__file__)}/images')
+media_path = os.path.join(f'{os.path.dirname(__file__)}', 'images/')
 print(media_path)
 
 try:
