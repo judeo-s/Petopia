@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
 /* Base Styles */
 * {
   box-sizing: border-box;
@@ -19,7 +23,7 @@ ul {
 
 /* Header Styles */
 header {
-  background-color: #004d4d;
+  background-color: #335eea;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -36,6 +40,8 @@ header .container {
 header h1 {
   margin: 0;
   color: #fff;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 2.5rem;
   text-shadow: 3px 3px 30px #727272;
 }
 
@@ -82,7 +88,7 @@ header nav a:hover {
     top: 100%;
     left: auto;
     right: 5%;
-    background: #004d4d;
+    background: #4a90e2;
     display: none;
     padding: 2rem 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -129,7 +135,7 @@ h2 {
   flex: 1;
   text-align: center;
   padding: 1rem;
-  color: #004d4d;
+  color: #333;
 }
 
 .hero .container h2 {
@@ -140,6 +146,12 @@ h2 {
 .hero .container p {
   font-size: 1.25rem;
   margin: 1rem 0;
+}
+
+.hero-span {
+  /* color: #4a90e2; */
+  font-family: 'Caveat Brush', cursive;
+  font-size: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -167,7 +179,7 @@ h2 {
 
 .hero button,
 .project-btn {
-  background-color: #004d4d;
+  background-color: #335eea;
   color: #fff;
   border-radius: 0.5rem;
   border: none;
@@ -185,7 +197,7 @@ h2 {
 
 .project-btn:hover,
 .hero button:hover {
-  background-color: #003333;
+  background-color: #4a90e2;
 }
 
 section {
@@ -207,6 +219,8 @@ section {
 
 .about-description {
   font-size: 1.25rem;
+  /* justify-content: center; */
+  text-align: center;
 }
 
 /* Features Section Styles */
@@ -311,7 +325,7 @@ section {
 
 /* Footer Styles */
 footer {
-  background-color: #004d4d;
+  background-color: #335eea;
   text-align: center;
   padding: 1rem 0;
   color: #fff;
