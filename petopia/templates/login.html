@@ -9,11 +9,11 @@
 {% block body %}
 <div class="login-container">
     <div class="login-box">
-        <h1 class="login-title">Plant Admin Login</h1>
+        <h1 class="login-title">Petopia Admin Login</h1>
         <p class="login-subtitle">Gardening is a way to a healthy life.</p>
         <hr class="divider">
         <p class="login-message">You are not logged in as an Administrative user. Please log in.</p>
-        <form method="post" action="{{ url_for('core.admin_login') }}">
+        <form method="post" action="{{ url_for('auth.login') }}">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input name="username" type="text" class="form-control" placeholder="Enter username" required>
@@ -23,7 +23,7 @@
                 <input name="password" type="password" class="form-control" placeholder="Password" required>
             </div>
             <button type="submit" class="btn btn-primary login-btn">Login as Admin</button>
-            <a href="{{ url_for('core.home') }}" class="btn btn-secondary go-home-btn">Go to Plant</a>
+            <a href="{{ url_for('shop.home') }}" class="btn btn-secondary go-home-btn">Go to Plant</a>
         </form>
     </div>
 </div>

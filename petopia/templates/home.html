@@ -5,19 +5,11 @@
 <div class="my-2 py-2">
   <div class="hero bg-gray pl-2">
     <div class="hero-body">
-      <h1>Plant</h1>
-      <p>Gardening is a way to a healthy life</p>
+      <h1>Adopt a Pet</h1>
+      <p>Adopting a pet is a great way to bring joy and companionship into your life.</p>
     </div>
+    <img loading="lazy" class="img-responsive img-fit-cover" src="{{url_for('static', filename='img/home_pets.jpg')}}">
   </div>
 </div>
 <!-- END HERO -->
-
-<!-- PRODUCT LIST -->
-<div class="my-2 py-2">
-  <div class="columns">
-    {% for product in products %}
-      {% include 'parts/item.html' %}
-    {% endfor %}
-  </div>
-</div>
 {% endblock content %}

@@ -11,9 +11,12 @@ app.app_context().push()
 # Flask Login
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
+from flask_babel import Babel
+
+babel = Babel(app)
 login_manager = LoginManager(app)
 bcrypt = Bcrypt(app)
-
+PATH = os.path.dirname(__file__)
 
 # Flask database
 from flask_sqlalchemy import SQLAlchemy
@@ -57,7 +60,6 @@ def create_superuser(username, password): # flask createsuperuser name pasword
     db.session.add(user)
     db.session.commit()
 
-app.cli.add_command(create_superuser)
 
 
 # CSRF
@@ -75,6 +77,7 @@ app.config.update(
 
 with app.app_context():
     db.create_all()
+app.cli.add_command(create_superuser)
 
 # Flask admin
 from petopia.mgmt.models import admin

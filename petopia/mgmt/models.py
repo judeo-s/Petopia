@@ -5,7 +5,7 @@ from flask_admin.contrib.sqla import ModelView
 import PIL
 from flask_wtf.csrf import _FlaskFormCSRF
 from wtforms.meta import DefaultMeta
-from petopia import app, db
+from petopia import app, db, PATH
 from flask import redirect, current_app, session
 from flask_login import current_user
 import os
@@ -20,8 +20,7 @@ class DashboardView(AdminIndexView):
 
 admin = Admin(app, name='User Admin', template_mode='bootstrap4', index_view=DashboardView())
 
-media_path = os.path.join(f'{os.path.dirname(__file__)}', 'images/')
-print(media_path)
+media_path = os.path.join(f'{PATH}/templates/static/')
 
 try:
     os.mkdir(media_path)
@@ -52,7 +51,7 @@ class CategoryAdmin(ModelView):
         return True if current_user.is_authenticated and current_user.is_superuser else False
 
     def inaccessible_callback(self, name, **kwargs):
-        return redirect('/admin')
+        return redirect('/admin/login')
     
 class ProductAdmin(ModelView):
     form_base_class = CustomSecureForm
@@ -116,4 +115,4 @@ class MediaAdmin(FileAdmin):
 admin.add_view(ProductAdmin(Product, db.session))
 admin.add_view(CategoryAdmin(Category, db.session))
 admin.add_view(OrderAdmin(Order, db.session))
-admin.add_view(MediaAdmin(media_path, '/images/', name='Media Files'))
+admin.add_view(MediaAdmin(media_path, name='Media Files'))

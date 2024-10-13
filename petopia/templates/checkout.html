@@ -8,7 +8,7 @@
           <h3>Fill The Shipping Information</h3>
         </div>
         <div class="my-2 py-2">
-          <form method="post" action="{{ url_for('cart.checkout') }}">
+          <form method="post" action="{{ url_for('shop.checkout') }}">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
             <div class="columns">
               <div class="column col-6 col-sm-12">
@@ -53,7 +53,7 @@
               </div>
             </div>
             <section class="my-2 py-2">
-              <p><strong>We're only taking orders within India.</strong> Please try to fill accurate infomation. We're providing <strong>cash on delivery</strong> payment option.</p>
+              <p><strong>We're only taking orders within Ghana.</strong> Please try to fill accurate infomation. We're providing <strong>cash on delivery</strong> payment option.</p>
               <button type="submit" class="btn btn-primary">Order now</button>
             </section>
           </form>

@@ -4,7 +4,7 @@
             <span class="mx-2">{{item.product_id}}</span>
         </td>
         <td><a href="{{url_for('shop.details', slug=item.slug)}}">{{item.product.name}}</a></td>
-        <td>Rs. {{item.product.price}}</td>
+        <td>${{item.product.price}}</td>
         <td>
             <div class="columns">
                 <a 
@@ -26,6 +26,6 @@
                 </a>
             </div>
         </td>
-        <td>Rs. {{item.total_price}}</td>
+        <td>${{item.total_price}}</td>
     </tr>
 {% endif %}

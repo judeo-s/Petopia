@@ -7,10 +7,10 @@
       {% endif %}
       <div class="card-header">
         <div class="card-title h5 text-ellipsis">{{product.name}}</div>
-        <small><Strong>Rs. {{product.price}}</Strong></small>
+        <small><Strong>${{product.price}}</Strong></small>
       </div>
       <div class="card-footer">
         <a href="{{url_for('shop.details', slug=product.slug)}}" class="btn btn-primary">Details</a>
       </div>
     </div>
-  </div>
+  </div> 
