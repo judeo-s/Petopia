@@ -1,7 +1,11 @@
 {% extends 'admin/master.html' %} {% block body %} {% if
 current_user.is_authenticated and current_user.is_superuser %}
-<link rel="icon" href="static/img/Petopia_favicon.png" type="image/x-icon" />
 <div class="jumbotron">
+  <link
+    rel="icon"
+    href="{{ url_for('static/img', filename='favicon.png') }}"
+    type="image/x-icon"
+  />
   <h1 class="display-4">Petopia Admin</h1>
   <p class="lead">Petopia is your one-stop for all your dream pets.</p>
   <hr class="my-4" />
