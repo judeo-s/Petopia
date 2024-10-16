@@ -1,6 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito+Sans:wght@200;400;700&display=swap');
 
 /* Base Styles */
 * {
@@ -107,7 +106,7 @@ header nav a:hover {
 /* Heading Styles */
 h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Main Page Styles */
@@ -149,7 +148,6 @@ h2 {
 }
 
 .hero-span {
-  /* color: #4a90e2; */
   font-family: 'Caveat Brush', cursive;
   font-size: 3rem;
 }
@@ -191,7 +189,7 @@ h2 {
 }
 
 .project-btn {
-  width: 100%; /* Adjust the width to fit the container */
+  width: 100%;
   max-width: 300px;
 }
 
@@ -219,51 +217,114 @@ section {
 
 .about-description {
   font-size: 1.25rem;
-  /* justify-content: center; */
   text-align: center;
 }
 
 /* Features Section Styles */
 .features {
   background-color: #fff;
-  color: #1f2937;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 3rem 1rem 5rem;
+  text-align: center;
 }
 
 .features-container {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
 
-.feature-desc {
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1200px;
   width: 100%;
-  max-width: 300px;
+}
+
+.feature-1,
+.feature-3 {
+  flex-direction: row-reverse;
+}
+
+.feature-description {
+  flex: 1;
+  text-align: left;
+}
+
+.feature-image {
+  flex: 1;
   text-align: center;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  padding: 1rem;
 }
 
-.features-img {
-  width: 100%;
+.feature img {
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.features-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+/* For responsive behavior */
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-.features-description {
-  font-size: 1.25rem;
+/* Feature Section Update */
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.feature-description {
+  max-width: 50%;
+}
+
+.feature-image {
+  max-width: 50%;
+  box-shadow: 5px 5px 20px 2px #00000033;
+  border-radius: 1rem;
+}
+
+.fd1,
+.fd2,
+.fd3 {
+  padding-left: 1rem;
+}
+
+/* For responsive behavior */
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature-2 {
+    flex-direction: column;
+  }
+
+  .feature-description,
+  .feature-image {
+    max-width: 100%;
+  }
 }
 
 /* Contact Section Styles */
