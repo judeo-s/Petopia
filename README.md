@@ -21,25 +21,25 @@ Petopia helps pet lovers find and adopt or purchase pets while promoting ethical
 
 ## Installation
 
-1. Download the Github repo.
+1. **Download the Github repository**
 
 ```bash
 git clone https://github.com/judeo-s/Petopia.git
 ```
 
-2. Navigate to the project directory
+2. **Navigate to the project directory**
 
 ```bash
 cd Petopia
 ```
 
-3. Installing all the required packages
+3. **Installing all the required packages**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the application
+4. **Run the application**
 
 ```bash
 python3 app.py
