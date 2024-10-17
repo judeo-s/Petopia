@@ -1,6 +1,6 @@
 # Petopia
 
-**Petopia** is a web platform designed for pet adoption and sales, where users can browse available pets for adoption or sale.
+**Petopia** is a web platform designed for users to browse available perts for adoption or sale.
 
 ## Description
 
