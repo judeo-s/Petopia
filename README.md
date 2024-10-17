@@ -1,42 +1,69 @@
-# Flask Plant Shop
+# Petopia
 
-An E-commerce site built with Flask and Spectre.css.
+**Petopia** is a web platform designed for pet adoption and sales, where users can browse available pets for adoption or sale.
 
 ## Description
 
-An E-commerce site built with Flask a Python web framework that has an admin panel using Flask Admin. It uses sessions for cart management. Only superusers can access the Admin panel. For styling Spectre.css is used.
+Petopia helps pet lovers find and adopt or purchase pets while promoting ethical practices in pet ownership. Users can:
+
+- Browse available pets.
+- Post detailed pet listings for adoption or sale.
+- Add pets to cart and checkout.
+
+## Features
+
+- Pet Categories: Organize pets into different categories for easier browsing.
+- Pet Details Page: Each pet listing includes comprehensive information
+- Search & Filters: Users can search for pets based on categories, breed, type, etc
+- Admin Panel: Manage orders and pets listings through a dedicated admin interface.
+- Cart Management: Allows users to add pets to their cart for future adoption or purchase.
+- Checkout: Streamlined process to complete the adoption or purchase of pets.
 
 ## Installation
 
 1. Download the Github repo.
+
 ```bash
-git clone https://github.com/anirbanbiswas04/Flask-Plant-Shop.git
+git clone https://github.com/judeo-s/Petopia.git
 ```
 
-2. Installing & activating Virtual Environment 
+2. Navigate to the project directory
+
 ```bash
-pip install virtualenv
-```
-```bash
-py -m venv env
-```
-```bash
-.\env\Scripts\Activate.ps1
+cd Petopia
 ```
 
-3. Installing all the required packages 
+3. Installing all the required packages
+
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the flask project 
+4. Run the application
+
 ```bash
-flask run
+python3 app.py
 ```
 
 ## Usage
-1. Create a superuser using `flask createsuperuser name password`.
-2. Add products from the admin panel.
-3. Visitors can browse products, search them.
-4. They can add products to cart and checkout.
-5. Admin user or superuser can manage all the orders.
+
+1. For user panel, go to `http://127.0.0.1:5000/`.
+2. For admin panel, go to `http://127.0.0.1:5000/admin`.
+3. Username for admin panel is `admin` and password is `password`.
+4. Users can use the search bar to browse pets for adoption/sale.
+5. Users can add pets to cart and checkout.
+6. Users can manage their listings through the admin panel.
+
+## Contribution Guidelines
+
+- Fork the repository.
+- Create a new branch `(git checkout -b feature/your-feature-name)`.
+- Commit your changes `(git commit -m 'Add some feature')`.
+- Push to the branch `(git push origin feature/your-feature-name)`.
+- Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Thank you for using Petopia!

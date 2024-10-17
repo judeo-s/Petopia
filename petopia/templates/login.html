@@ -1,0 +1,42 @@
+{% extends 'admin/master.html' %} {% block header %}
+<div class="navbar">ADMIN</div>
+{% endblock %} {% block body %}
+<div class="login-container">
+  <div class="login-box">
+    <h1 class="login-title">Petopia Admin Login</h1>
+    <p class="login-subtitle">Find your forever friend today.</p>
+    <hr class="divider" />
+    <p class="login-message">
+      You are not logged in as an Administrative user. Please log in.
+    </p>
+    <form method="post" action="{{ url_for('auth.login') }}">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          name="username"
+          type="text"
+          class="form-control"
+          placeholder="Enter username"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          name="password"
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary login-btn">
+        Login as Admin
+      </button>
+      <a href="{{ url_for('shop.home') }}" class="btn btn-secondary go-home-btn"
+        >Go to Petopia</a
+      >
+    </form>
+  </div>
+</div>
+{% endblock %}
