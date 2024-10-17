@@ -19,6 +19,10 @@ Petopia helps pet lovers find and adopt or purchase pets while promoting ethical
 - **Cart Management:** Allows users to add pets to their cart for future adoption or purchase.
 - **Checkout:** Streamlined process to complete the adoption or purchase of pets.
 
+## Video Demonstration
+
+[Download the video](https://drive.google.com/file/d/1PuGhOfKCyzeyBVh8RLyueg98qrvvQ8k8/view?usp=sharing)
+
 ## Installation
 
 1. **Download the Github repository**
@@ -71,8 +75,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Three members collaborated as a team in the development and completion of Petopia.
 
 The team members are as follows:
-- Sadik Adams (https://github.com/PoisebTechHub)
-- Jude Osam-Sackey (https://github.com/judeo-s)
-- Cleveland Ataafi (https://github.com/thatguykwameC)
+- **Jude Osam-Sackey** (https://github.com/judeo-s)
+- **Sadik Adams** (https://github.com/PoisebTechHub)
+- **Cleveland Ataafi** (https://github.com/thatguykwameC)
 
 ## Thank you for using Petopia!
