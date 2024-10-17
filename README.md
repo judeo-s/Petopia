@@ -21,7 +21,7 @@ Petopia helps pet lovers find and adopt or purchase pets while promoting ethical
 
 ## Video Demonstration
 
-- [Click here watch the video](https://drive.google.com/file/d/1PuGhOfKCyzeyBVh8RLyueg98qrvvQ8k8/view?usp=sharing)
+- [Click here to watch the video](https://drive.google.com/file/d/1PuGhOfKCyzeyBVh8RLyueg98qrvvQ8k8/view?usp=sharing)
 
 ## Video Preview
 
