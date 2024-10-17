@@ -47,7 +47,7 @@ python3 app.py
 
 ## Usage
 
-1. FOr user panel, go to `http://127.0.0.1:5000/`.
+1. For user panel, go to `http://127.0.0.1:5000/`.
 2. For admin panel, go to `http://127.0.0.1:5000/admin`.
 3. Username for admin panel is `admin` and password is `password`.
 4. Users can use the search bar to browse pets for adoption/sale.
