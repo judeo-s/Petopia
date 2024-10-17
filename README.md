@@ -69,5 +69,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## The Team
 
 Three members collaborated as a team in the development and completion of Petopia.
+The team members are as follows:
 
 ## Thank you for using Petopia!
