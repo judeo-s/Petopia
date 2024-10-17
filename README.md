@@ -1,6 +1,6 @@
 # Petopia
 
-**Petopia** is a web platform designed for users to browse available perts for adoption or sale.
+**Petopia** is a web platform designed for users to browse available pets for adoption or sale.
 
 ## Description
 
@@ -12,12 +12,12 @@ Petopia helps pet lovers find and adopt or purchase pets while promoting ethical
 
 ## Features
 
-- Pet Categories: Organize pets into different categories for easier browsing.
-- Pet Details Page: Each pet listing includes comprehensive information
-- Search & Filters: Users can search for pets based on categories, breed, type, etc
-- Admin Panel: Manage orders and pets listings through a dedicated admin interface.
-- Cart Management: Allows users to add pets to their cart for future adoption or purchase.
-- Checkout: Streamlined process to complete the adoption or purchase of pets.
+- **Pet Categories:** Organize pets into different categories for easier browsing.
+- **Pet Details Page:** Each pet listing includes comprehensive information
+- **Search & Filters:** Users can search for pets based on categories, breed, type, etc
+- **Admin Panel:** Manage orders and pets listings through a dedicated admin interface.
+- **Cart Management:** Allows users to add pets to their cart for future adoption or purchase.
+- **Checkout:** Streamlined process to complete the adoption or purchase of pets.
 
 ## Installation
 
