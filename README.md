@@ -21,7 +21,7 @@ Petopia helps pet lovers find and adopt or purchase pets while promoting ethical
 
 ## Video Demonstration
 
-- [Click to here watch the video](https://drive.google.com/file/d/1PuGhOfKCyzeyBVh8RLyueg98qrvvQ8k8/view?usp=sharing)
+- [Click here watch the video](https://drive.google.com/file/d/1PuGhOfKCyzeyBVh8RLyueg98qrvvQ8k8/view?usp=sharing)
 
 ## Video Preview
 
@@ -51,6 +51,11 @@ pip install -r requirements.txt
 
 ```bash
 python3 app.py
+```
+or use the following if you are working with windows terminal or ubuntu with wsl
+
+```bash
+python app.py
 ```
 
 ## Usage
