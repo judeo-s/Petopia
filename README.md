@@ -66,4 +66,8 @@ python3 app.py
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## The Team
+
+Three members collaborated as a team in the development and completion of Petopia.
+
 ## Thank you for using Petopia!
