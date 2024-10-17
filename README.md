@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ```bash
 python3 app.py
 ```
-or use the following if you are working with windows terminal or ubuntu with wsl
+- or use the following if you are working with windows terminal or ubuntu with wsl
 
 ```bash
 python app.py
